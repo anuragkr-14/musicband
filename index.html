@@ -66,13 +66,14 @@
             top: 0;
             left: 0;
             width: 100%;
-            padding: 2rem 7%;
+            padding: 1.8rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             background: transparent;
+            gap: 2rem;
         }
 
         .navbar.scrolled {
@@ -85,35 +86,37 @@
 
         .logo {
             font-family: 'Cinzel', serif;
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             font-weight: 900;
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             cursor: pointer;
             text-shadow: 0 0 30px rgba(255, 184, 77, 0.3);
             flex-shrink: 0;
+            white-space: nowrap;
         }
 
         .nav-links {
             display: flex;
-            gap: 3.5rem;
+            gap: 2rem;
             list-style: none;
             align-items: center;
+            flex-wrap: nowrap;
         }
 
         .nav-links a {
             color: var(--light);
             text-decoration: none;
             font-weight: 600;
-            font-size: 1rem;
-            letter-spacing: 2px;
+            font-size: 0.9rem;
+            letter-spacing: 1.5px;
             position: relative;
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             text-transform: uppercase;
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 0.8rem;
             white-space: nowrap;
         }
 
